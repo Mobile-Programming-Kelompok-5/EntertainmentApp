@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/SpotiMUI/BuildConfig.java
+ com.example.SpotiMUI.BuildConfig
