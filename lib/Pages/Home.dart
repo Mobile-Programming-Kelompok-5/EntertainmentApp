@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: SafeArea(
           child: Container(
-              padding: EdgeInsets.only(top: 20, left: 30, right: 20),
+              padding: EdgeInsets.only(top: 20, left: 30, right: 30),
               child: Column(children: [
                 Row(children: [
                   Container(

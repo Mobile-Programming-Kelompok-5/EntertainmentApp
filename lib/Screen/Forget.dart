@@ -92,25 +92,25 @@ class _ForgetState extends State<Forget> {
                   ),
 
                   Container(
-                      padding: EdgeInsets.all(20),
-                      child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Starter(),
-                                ));
-                          },
-                          child: Text(
-                            "Reset Password",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
+                    child: SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Starter(),
+                                  ));
+                            },
+                            child: Text(
+                              "Reset Password",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                              ),
                             ),
-                          ),
-                          style: UpButton
-                          )
-                    ),
+                            style: UpButton)),
+                  )
                 ]))));
   }
 }

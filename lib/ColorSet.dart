@@ -5,7 +5,7 @@ const MainColorLight = Colors.white;
 const HelpButtonColor = Colors.redAccent;
 const TextColorDark = Colors.black;
 const TextColorLight = Colors.white;
-const ActiveIconcolor = Colors.orangeAccent;
+const ActiveIconcolor = Colors.redAccent;
 
 const TextTitle =
     TextStyle(color: TextColorLight, fontSize: 50, fontWeight: FontWeight.bold);
