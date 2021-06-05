@@ -12,39 +12,41 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-          child: Container(
-              padding: EdgeInsets.only(top: 20, left: 30, right: 30),
-              child: Column(children: [
-                Row(children: [
-                  Container(
-                      child: Text(
-                    'Listen Now',
-                    style: HomeText,
-                    textAlign: TextAlign.left,
-                  )),
-                  Container(
-                    padding: EdgeInsets.only(left: 90),
-                    child: MaterialButton(
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Profile()));
-                      },
-                      child: Icon(
-                        Ionicons.person_outline,
-                        color: Colors.white,
-                      ),
-                      padding: EdgeInsets.all(10),
-                      shape: CircleBorder(),
-                      color: Colors.black,
-                    ),
-                  )
-                ]),
-
-
-                divider,
-                
-              ]))),
-    );
+        body: SafeArea(
+            child: Column(children: [
+      Row(
+        children: [
+          Padding(padding: EdgeInsets.only(left: 10, right: 10, top: 100)),
+          Expanded(
+              child: Row(
+            children: [
+              Container(
+                  child: Text(
+                'Listen Now',
+                style: HomeText,
+                textAlign: TextAlign.left,
+              )),
+              Container(
+                padding: EdgeInsets.only(left: 90),
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Icon(
+                    Ionicons.person_outline,
+                    color: Colors.white,
+                  ),
+                  padding: EdgeInsets.all(10),
+                  shape: CircleBorder(),
+                  color: Colors.black,
+                ),
+              ),
+            ],
+          )),
+        ],
+      ),
+      divider,
+    ])));
   }
 }

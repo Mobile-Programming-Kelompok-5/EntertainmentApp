@@ -33,7 +33,7 @@ class _LoginState extends State<Login> {
         ),
         body: SafeArea(
             child: Container(
-                padding: EdgeInsets.only(top: 200, left: 40, right: 40),
+                padding: EdgeInsets.fromLTRB(20, 100, 20, 100),
                 child: Column(children: [
                   Row(children: [
                     TextButton(

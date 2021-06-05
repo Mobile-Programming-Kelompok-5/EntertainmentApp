@@ -15,10 +15,10 @@ class _StarterState extends State<Starter> {
       backgroundColor: MainColorDark,
       body: SafeArea(
           child: Container(
-              padding: EdgeInsets.only(left: 40, right: 40, top: 250),
+              padding: EdgeInsets.only(left: 40, right: 40, top: 200),
               child: Column(children: [
                 Container(
-                  padding: EdgeInsets.only(bottom: 100),
+                  padding: EdgeInsets.only(bottom: 50),
                   child: Text('Welcome',
                       textAlign: TextAlign.center, style: TextTitle),
                 ),
@@ -27,38 +27,36 @@ class _StarterState extends State<Starter> {
                       padding: EdgeInsets.only(top: 10),
                       child: SizedBox(
                           width: double.infinity,
-                          child: ElevatedButton(onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => SignUp(),
-                                ));
-                          },
-                          child: Text(
-                            'Sign Up',
-                            style: SignButton,
-                            ),
-                          style: UpButton
-                          ))),
-
-                  
+                          child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => SignUp(),
+                                    ));
+                              },
+                              child: Text(
+                                'Sign Up',
+                                style: SignButton,
+                              ),
+                              style: UpButton))),
                   Container(
                       padding: EdgeInsets.only(top: 10),
                       child: SizedBox(
                           width: double.infinity,
-                          child: ElevatedButton(onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Login(),
-                                ));
-                          },
-                          child: Text(
-                            'Login',
-                            style: SignButton,
-                            ),
-                          style: LogButton
-                          )))
+                          child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Login(),
+                                    ));
+                              },
+                              child: Text(
+                                'Login',
+                                style: SignButton,
+                              ),
+                              style: LogButton)))
                 ])
               ]))),
     );

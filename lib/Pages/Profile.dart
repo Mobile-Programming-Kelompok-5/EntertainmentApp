@@ -13,16 +13,12 @@ class Profile extends StatelessWidget {
               child: Column(children: [
             Column(
               children: [
-                CircleAvatar(
-                  radius: 70,
-                  backgroundImage: NetworkImage(
-                      "https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1276&q=80"),
-                ),
+                
                 SizedBox(
                   height: 40.0,
                 ),
                 Text(
-                  "Doctor Code",
+                  ".......",
                   style: HomeText,
                 ),
               ],
