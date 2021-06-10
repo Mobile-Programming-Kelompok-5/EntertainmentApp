@@ -55,6 +55,7 @@ class Search extends StatelessWidget {
                             color: Colors.deepOrange,
                           ),
                         ),
+                        
                         ClipRRect(
                           borderRadius: BorderRadius.circular(10.0),
                           child: Container(

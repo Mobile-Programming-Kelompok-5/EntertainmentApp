@@ -15,7 +15,7 @@ class _StarterState extends State<Starter> {
       backgroundColor: MainColorDark,
       body: SafeArea(
           child: Container(
-              padding: EdgeInsets.only(left: 40, right: 40, top: 200),
+              padding: EdgeInsets.only(left: 40, right: 40, top: 250),
               child: Column(children: [
                 Container(
                   padding: EdgeInsets.only(bottom: 50),

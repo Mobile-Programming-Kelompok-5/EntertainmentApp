@@ -1,4 +1,5 @@
 import 'package:entertainmentapps/ColorSet.dart';
+import 'package:entertainmentapps/Pages/Help.dart';
 import 'package:entertainmentapps/Screen/Forget.dart';
 import 'package:entertainmentapps/Screen/MenuNavigation.dart';
 import 'package:entertainmentapps/Screen/Start.dart';
@@ -47,11 +48,14 @@ class _LoginState extends State<Login> {
                             MaterialPageRoute(builder: (context) => Starter()));
                       },
                     ),
-                    Padding(padding: EdgeInsets.only(right: 180, bottom: 50)),
+                    Padding(padding: EdgeInsets.only(right: 200, bottom: 50)),
                     TextButton(
                       child: Text('Help!',
                           style: HelpColor, textAlign: TextAlign.left),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Help()));
+                      },
                     ),
                   ]),
                   Container(
