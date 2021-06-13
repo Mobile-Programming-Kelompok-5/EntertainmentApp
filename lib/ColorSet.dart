@@ -6,6 +6,7 @@ const HelpButtonColor = Colors.redAccent;
 const TextColorDark = Colors.black;
 const TextColorLight = Colors.white;
 const ActiveIconcolor = Colors.redAccent;
+const CardColor = Color(0xFFEBEBEB);
 
 const TextTitle =
     TextStyle(color: TextColorLight, fontSize: 50, fontWeight: FontWeight.bold);
@@ -23,8 +24,33 @@ const ChooseColor = TextStyle(color: TextColorDark, fontSize: 20);
 const HelpColor = TextStyle(
     color: HelpButtonColor, fontSize: 20, fontWeight: FontWeight.bold);
 
-const HeadText =
+const HeadTextLight =
+    TextStyle(color: TextColorDark, fontSize: 20, fontWeight: FontWeight.bold);
+
+const HeadTextDark =
     TextStyle(color: TextColorLight, fontSize: 20, fontWeight: FontWeight.bold);
+
+class ColorSet {
+  static ThemeData lightTheme = ThemeData(
+    backgroundColor: MainColorLight,
+    scaffoldBackgroundColor: MainColorLight,
+    appBarTheme: AppBarTheme(
+      backgroundColor: MainColorLight,
+      elevation: 0,
+      color: TextColorDark,
+    ),
+  );
+
+  static ThemeData darkTheme = ThemeData(
+    backgroundColor: MainColorDark,
+    scaffoldBackgroundColor: MainColorDark,
+    appBarTheme: AppBarTheme(
+      backgroundColor: MainColorDark,
+      elevation: 0,
+      color: TextColorLight,
+    ),
+  );
+}
 
 ButtonStyle UpButton = ButtonStyle(
   backgroundColor: MaterialStateProperty.all(Colors.green),
@@ -81,6 +107,7 @@ TextField UField = TextField(
       const Radius.circular(20.0),
     ),
   ),
+  isDense: true,
   labelText: 'Username or Email'
 ));
 

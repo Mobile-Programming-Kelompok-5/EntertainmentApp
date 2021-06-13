@@ -1,8 +1,8 @@
 import 'package:entertainmentapps/ColorSet.dart';
-import 'package:entertainmentapps/Pages/Help.dart';
 import 'package:entertainmentapps/Screen/Forget.dart';
 import 'package:entertainmentapps/Screen/MenuNavigation.dart';
 import 'package:entertainmentapps/Screen/Start.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -48,14 +48,24 @@ class _LoginState extends State<Login> {
                             MaterialPageRoute(builder: (context) => Starter()));
                       },
                     ),
-                    Padding(padding: EdgeInsets.only(right: 200, bottom: 50)),
+                    Padding(padding: EdgeInsets.only(right: 220, bottom: 50)),
                     TextButton(
                       child: Text('Help!',
                           style: HelpColor, textAlign: TextAlign.left),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Help()));
-                      },
+                      onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => CupertinoAlertDialog(
+                          title: const Text('Ngapain?'),
+                          content: const Text(
+                              'Orang tinggal masukkin Email sama password, Lupa udah disediain tombolnya..'),
+                          actions: <Widget>[
+                            FlatButton(
+                              onPressed: () => Navigator.pop(context, 'Close'),
+                              child: const Text('Oke Bos'),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
                   ]),
                   Container(
@@ -68,6 +78,7 @@ class _LoginState extends State<Login> {
                           decoration: InputDecoration(
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(20)),
+                              isDense: true,
                               labelText: 'Password',
                               suffixIcon: IconButton(
                                   icon: Icon(_obscureText

@@ -11,8 +11,8 @@ class _ForgetState extends State<Forget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(backgroundColor: MainColorDark, elevation: 0),
-        backgroundColor: MainColorDark,
+        appBar: AppBar(backgroundColor: MainColorLight, elevation: 0),
+        backgroundColor: MainColorLight,
         body: SafeArea(
             child: Container(
                 padding: EdgeInsets.only(top: 30, left: 40, right: 40),
@@ -25,7 +25,7 @@ class _ForgetState extends State<Forget> {
                         child: Text(
                           'Username or Email ',
                           textAlign: TextAlign.center,
-                          style: HeadText,
+                          style: HeadTextLight,
                         ),
                       ),
                       Container(
@@ -50,7 +50,7 @@ class _ForgetState extends State<Forget> {
                         child: Text(
                           'New Password',
                           textAlign: TextAlign.center,
-                          style: HeadText,
+                          style: HeadTextLight,
                         ),
                       ),
                       Container(
@@ -74,7 +74,7 @@ class _ForgetState extends State<Forget> {
                       Container(
                         padding: EdgeInsets.all(20),
                         child: Text('Confirm New Password',
-                            textAlign: TextAlign.center, style: HeadText),
+                            textAlign: TextAlign.center, style: HeadTextLight),
                       ),
                       Container(
                         child: TextField(

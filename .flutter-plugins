@@ -1,6 +1,11 @@
 # This is a generated file; do not edit or check into version control.
+des_plugin=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/des_plugin-0.0.3/
+firebase_core=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.3.0/
+firebase_core_web=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.1.0/
+firebase_database=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-7.1.1/
 path_provider_linux=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.0/
 path_provider_windows=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.1/
+playify=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/playify-2.0.0/
 shared_preferences=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.6/
 shared_preferences_linux=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-2.0.0/
 shared_preferences_macos=/Users/filbert/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-2.0.0/

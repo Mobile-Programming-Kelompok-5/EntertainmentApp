@@ -1,0 +1,6 @@
+framework module des_plugin {
+  umbrella header "des_plugin-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,7 +13,7 @@ class _LibraryState extends State<Library> {
     return Scaffold(
         body: SafeArea(
             child: Container(
-                padding: EdgeInsets.only(top: 30, left: 12, right: 10),
+                padding: EdgeInsets.only(top: 30, left: 30, right: 20),
                 child: Column(children: [
                   Row(children: [
                     Row(children: [

@@ -1,7 +1,9 @@
+
 import 'package:entertainmentapps/ColorSet.dart';
 import 'package:entertainmentapps/Pages/Profile.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+ 
 
 class Home extends StatefulWidget {
   @override
@@ -9,6 +11,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +53,7 @@ class _HomeState extends State<Home> {
               ),
             
             divider,
+            
           ],
         ),
       ),
